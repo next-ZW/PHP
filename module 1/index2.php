@@ -32,6 +32,8 @@ h2{
 
 </head>
 <body id="time">
+
+
 <?php
 date_default_timezone_set("Europe/Amsterdam");
 $time = date("H:i:s");
