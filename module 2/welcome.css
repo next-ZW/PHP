@@ -1,4 +1,4 @@
-body{
+body {
     background-color: hsl(0, 0%, 22%);
     color: white;
     position: absolute;
@@ -7,9 +7,14 @@ body{
     transform: translate(-50%, -50%);
 }
 
-input[type=submit]{
+input[type=submit] {
     margin: 10px 25px;
     padding: 10px 25px;
     cursor: pointer;
+}
 
+.error {
+    color: red;
+    float: right;
+    margin-left: 5px;
 }

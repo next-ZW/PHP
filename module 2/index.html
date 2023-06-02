@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="welcome.css">
 </head>
 <body>
-    <form action="welcome.php" method="get">
+    <form action="welcome.php" method="post">
         <label for="Naam">Naam:</label><br>
+        <span class="error">*</span>
         <input type="text" id="Naam" name="Naam"><br>
         <label for="Email">Email:</label><br>
+        <span class="error">*</span>
         <input type="text" id="Email" name="Email"><br>
-        <input type="submit">
-    </form> 
+        <input type="submit" value="Submit">
+    </form>
 </body>
-</html>
-
 </html>
