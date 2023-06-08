@@ -10,7 +10,7 @@
 
 <body>
     <h1>De ingevulde gegevens zijn:</h1>
-    <p>Naam: <?php echo htmlspecialchars($_POST['Naam']); ?></p>
-    <p>E-mailadres: <?php echo htmlspecialchars($_POST['Email']); ?></p>
+    <p>Naam: <?php echo ($_POST['Naam']); ?></p>
+    <p>E-mailadres: <?php echo ($_POST['Email']); ?></p>
 </body>
 </html>
