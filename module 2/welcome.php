@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
 </head>
-
-
 <body>
     <h1>De ingevulde gegevens zijn:</h1>
-    <p>Naam: <?php echo ($_POST['Naam']); ?></p>
-    <p>E-mailadres: <?php echo ($_POST['Email']); ?></p>
+    <p>Naam: <?php echo ($_POST['name'])?></p>
+    <p>E-mailadres: <?php echo ($_POST['email'])?></p>
 </body>
 </html>
