@@ -15,5 +15,6 @@ input[type=submit] {
 
 .error {
     color: red;
+    float: right;
     margin-left: 5px;
 }
