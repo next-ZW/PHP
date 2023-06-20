@@ -17,7 +17,3 @@ input[type=submit] {
     color: red;
     margin-left: 5px;
 }
-
-a:active {
-    color: white;
- }
