@@ -19,22 +19,18 @@
             $kunnen = $_POST["kunnen"];
             $persoon = $_POST["persoon"];
             $getal = $_POST["getal"];
-            $verveelt = $_POST["verveelt"];
+            $beste_eigenschap = $_POST["beste_eigenschap"];
             $vakantie = $_POST["vakantie"];
-            $eigenschap = $_POST["eigenschap"];
+            $slechte_eigenschap = $_POST["slechte_eigenschap"];
             $overkomen = $_POST["overkomen"];
 
-            // Server-side validation
-            if (empty($kunnen) || empty($persoon) || empty($getal) || empty($verveelt) || empty($vakantie) || empty($eigenschap) || empty($overkomen)) {
+            if (empty($kunnen) || empty($persoon) || empty($getal) || empty($beste_eigenschap) || empty($vakantie) || empty($slechte_eigenschap) || empty($overkomen)) {
                 echo "<p>Alle velden zijn verplicht.</p>";
             } else {
-                $result = "Onkunde! " . $persoon . " zou graag " . $kunnen . " willen kunnen. ";
-                $result .= "Helaas heeft " . $persoon . " nog geen talent hiervoor ontwikkeld. ";
-                $result .= "Met een getal als " . $getal . " weet " . $persoon . " nog steeds niet ";
-                $result .= "hoe hij/zij " . $verveelt . " moet vermijden. " . $persoon . " heeft altijd ";
-                $result .= $vakantie . " bij zich als hij/zij op vakantie gaat. ";
-                $result .= "Zijn/haar slechtste eigenschap is " . $eigenschap . ". ";
-                $result .= "Het ergste dat " . $persoon . " kan overkomen is " . $overkomen . ".";
+                $result = "Er zijn veel mensen die niet kunnen " .$kunnen.". Neem nou " .$persoon. ". Zelf met de hulp <br/>" ;
+                $result .= "van een " .$vakantie. " of zelfs " .$getal. " kan " .$persoon. " niet " .$kunnen."." ;
+                $result .= "Dat heeft niet te maken met <br/> een gebrek aan " .$beste_eigenschap. ", maar met een te veel aan ".$slechte_eigenschap.". Te veel aan ".$slechte_eigenschap. "<br/>";
+                $result .= "leidt tot ".$overkomen. " en dat is niet goed als je wilt ".$kunnen.". Helaas voor ".$persoon.".";
 
                 echo "<p>" . $result . "</p>";
             }

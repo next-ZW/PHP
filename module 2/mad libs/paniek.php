@@ -28,18 +28,20 @@
             if (empty($huisdier) || empty($persoon) || empty($land) || empty($verveelt) || empty($speelgoed) || empty($spijbel) || empty($geld) || empty($bezigheid)) {
                 echo "<p>Alle velden zijn verplicht.</p>";
             } else {
-                $result = "Er heerst paniek! " . $persoon . " is vermist in het woeste oerwoud van " . $land . ". ";
-                $result .= "Met een leger van " . $speelgoed . " en " . $verveelt . " weet " . $persoon . " ";
-                $result .= "te ontsnappen aan de gevaarlijke " . $huisdier . ". " . $persoon . " heeft een talent ";
-                $result .= "voor " . $bezigheid . " en gebruikt dat om de wereld te redden. ";
-                $result .= "Maar niet voordat " . $spijbel . " in een onbewaakt moment het hele fortuin van " . $geld . " heeft gestolen!";
-
-                echo "<p>" . $result . "</p>";
+                $print = "Er heerst paniek in het koningrijk ".$land.". Koning ".$spijbel. " Is ten einde raad en als koning <br>".$spijbel. "ten einde raads is, dan roept hij zijn ten-einde-raadscheer ".$persoon. "</br> </br>";
+                $print .= '"' .$persoon. "! Het is een ramp! Het is een schande!".'" </br> </br>';
+                $print .= '"Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?" </br> </br>'                   ;
+                $print .= '"Mijn ' .$huisdier. " is verdwenen! Zo maar, zonder waarschuwing. En ik had net " .$speelgoed. ' voor hem </br> gekocht!" </br> </br>';
+                $print .= '"Majesteit, uw '.$huisdier.' komt vanzelf weer terug?" </br> </br>';
+                $print .= '"Ja, da s leuk en aardig, maar hoe moet ik in de tussentijd '.$bezigheid.' leren?" </br> </br>';
+                $print .= '"Maar sire, daar kunt u toch uw '.$geld.'voor gebruiken" </br> </br>';
+                $print .=   '"'.$persoon.', je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had" </br> </br>';
+                $print .= '"'.$verveelt.', Sire." </br> </br>';
+                echo "<p>" . $print . "</p>";
             }
+            
         }
         ?>
-
-        <a href="paniek.html">Terug naar Er heerst paniek </a>
     </main>
 
     <footer>
